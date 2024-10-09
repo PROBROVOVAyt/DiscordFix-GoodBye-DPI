@@ -5,7 +5,7 @@ IF "%PROCESSOR_ARCHITECTURE%"=="AMD64" (set _arch=x86_64)
 IF DEFINED PROCESSOR_ARCHITEW6432 (set _arch=x86_64)
 PUSHD "%_arch%"
 
-start "" goodbyedpi.exe -9 --blacklist ..\russia-blacklist.txt --blacklist ..\russia-youtube.txt
+start "" goodbyedpi.exe -9 --blacklist ..\russia-blacklist.txt --blacklist ..\russia-youtube.txt --blacklist ..\russia-discord.txt
 
 POPD
 POPD
